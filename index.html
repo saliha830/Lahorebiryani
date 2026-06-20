@@ -235,26 +235,41 @@ html,body{max-width:480px;margin:0 auto;background:#180000;overflow-x:hidden;fon
   </div>
   <div class="cart-list" id="cartList"></div>
   <div class="ibox">
-    <div class="ibox-ttl">&#128205; Delivery Location</div>
-    <div style="font-size:16px;font-weight:bold;color:#ffd700;text-align:center;margin:8px 0;">
+  <div class="ibox-ttl" style="font-size:14px;font-weight:bold;">
+&#128205; Delivery Location
+    </div>
+    <div style="font-size:16px;font-weight:bold;color:#ff3b30;text-align:center;margin:8px 0;">
 ⚠ Advance Payment Required<br>
 JazzCash No: 03084374717
     </div>
-    <div class="loc-status" id="locStatus">Share your location for delivery</div>
-    <div class="loc-methods">
-      <button class="loc-method-btn" id="gpsBtn">&#128225; Auto GPS<br><span style="font-size:8px;opacity:0.65">Uses device location</span></button>
-      <button class="loc-method-btn" id="manualBtn">&#9998; Type Address<br><span style="font-size:8px;opacity:0.65">Write manually</span></button>
+   <div class="loc-status" id="locStatus" style="font-size:18px;font-weight:bold;">
+Share your location for delivery
     </div>
+    <div class="loc-methods">
+    <button class="loc-method-btn" id="gpsBtn" style="font-size:18px;font-weight:bold;">
+&#128225; Auto GPS<br>
+<span style="font-size:13px;opacity:0.85">Uses device location</span>
+    </button>
+      <button class="loc-method-btn" id="manualBtn" style="font-size:18px;font-weight:bold;">
+&#9998; Type Address<br>
+<span style="font-size:13px;opacity:0.85">Write manually</span>
+      </button> </div>
     <div id="manualRow" style="display:none;margin-top:9px">
       <input class="inp" id="manualLoc" type="text" inputmode="text"
         placeholder="House no., street, area, Lahore"
         style="font-size:15px;padding:13px 15px;margin-bottom:7px">
-      <button class="btn btn-gold" style="width:100%;padding:12px;font-size:15px" id="saveLocBtn">&#10003; Save Address</button>
+    <button class="btn btn-gold"
+  style="width:100%;padding:12px;font-size:15px;font-weight:bold;border-radius:8px;"
+  id="saveLocBtn">
+  ✓ Save Address
+      </button>
     </div>
     <div class="loc-result" id="locResult"></div>
   </div>
   <div class="ibox">
-    <label class="lbl" style="margin-bottom:8px">&#128221; Special Instructions</label>
+<label class="lbl" style="margin-bottom:8px;font-size:18px;font-weight:bold;">
+&#128221; Special Instructions
+    </label>
     <textarea class="inp" id="instTxt" rows="3" inputmode="text"
       placeholder="Extra spicy? Less oil? Separate packing?..."
       style="resize:none;font-size:14px"></textarea>
