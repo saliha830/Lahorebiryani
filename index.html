@@ -530,7 +530,11 @@ function renderCart(){
       +'<span class="sum-lbl">Total</span>'
       +'<span class="sum-val">Rs. '+total+'</span>'
     +'</div>';
-}
+}<div style="font-size:18px;font-weight:bold;color:#ffd700;text-align:center;margin:10px 0;">
+⚠ Advance Payment Only<br>
+JazzCash No: 03084374717<br> send screenshot of payment on watsapp
+</div>
+  
 function doGPS(){
   var st = document.getElementById('locStatus');
   var res = document.getElementById('locResult');
@@ -553,7 +557,7 @@ function doGPS(){
       st.textContent='GPS location saved!'; st.style.color='#80e880';
       res.style.display='block';
       res.innerHTML='&#128205; <a href="'+url+'" target="_blank" style="color:#80e880;text-decoration:underline">Open in Google Maps</a><br><small style="opacity:0.7">'+lat+', '+lng+'</small>';
-      btn.innerHTML='&#128225; Update GPS<br><span style="font-size:8px;opacity:0.65">Uses device location</span>';
+      btn.innerHTML='&#128225; Update GPS<br><span style="font-size:12px;opacity:0.65">Uses device location</span>';
       btn.style.opacity='1';
       toast('Location captured!','ok');
     },
